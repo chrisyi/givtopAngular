@@ -1,0 +1,17 @@
+<div class="container-fluid ">
+    <div class="row">
+        <div ng-repeat="article in fc.newsData | limitTo: items.length /2: 0" class="afterrow col-xs-12 col-sm-4">
+            <div class="thumbnail">
+                <div ng-click="fc.redirectFn({article: article})" class="pointer">
+                    <!--first article is from saved.html and second article is from this file-->
+                    <img class="center-block img-responsive" ng-src="{{article.thumbnail}}">
+                    <p class="text-center">{{article.title}}</p>
+                </div>
+                <div class="text-center">
+                    <button ng-if="!article.saved" class="btn btn-default text-center" type="submit" ng-click="fc.buttonFn({article: article})">{{fc.buttonLabel}}</button>
+                    <button ng-if="article.saved" class="btn btn-default text-center" type="submit">Saved</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<h1 class="text-center ">Reddit Weekly</h1>
+<div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </div>
+         <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Subreddits <b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-column columns-3">
+                        <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                   <li class="list-inline center-block text-center">Tech</li>
+                                   <li class="divider"></li>
+                                   <li><a ui-sref="home({redditSearch: 'LearnProgramming'})"; href="#">LearnProgramming</a></li>
+                                   <li><a ui-sref="home({redditSearch: 'CSCareerQuestions'})" href="#">CSCareerQuestions</a></li>
+                                   <li><a ui-sref="home({redditSearch: 'WebDev'})" href="#">WebDev</a></li>
+                                </ul>
+                             </div>
+                     <div class="col-sm-4">
+                        <ul class="multi-column-dropdown">
+                           <li class="list-inline center-block text-center">Animals</li>
+                           <li class="divider"></li>
+                           <li><a ui-sref="home({redditSearch: 'Aww'})" href="#">Aww</a></li>
+                           <li><a ui-sref="home({redditSearch: 'Catloaf'})" href="#">Catloaf</a></li>
+                           <li><a ui-sref="home({redditSearch: 'DogPictures'})" href="#">DogPictures</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-4">
+                        <ul class="multi-column-dropdown">
+                           <li class="list-inline center-block text-center">Entertainment</li>
+                           <li class="divider"></li>
+                           <li><a ui-sref="home({redditSearch: 'NotTheOnion'})" href="#">NotTheOnion</a></li>
+                           <li><a ui-sref="home({redditSearch: 'Showerthoughts'})" href="#">Showerthoughts</a></li>
+                           <li><a ui-sref="home({redditSearch: 'TrippinThroughTime'})" href="#">TrippinThroughTime</a></li>
+                        </ul>
+                     </div>
+                  </ul>
+               </li>
+               <li ui-sref="saved" ng-click=""><a href="">Saved</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
